@@ -1,0 +1,132 @@
+body {
+  font-family: "Asap", sans-serif;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: normal;
+}
+
+label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  padding-bottom: 12px;
+  padding-top: 20px;
+}
+
+input {
+  height: 40px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #c9c9c9;
+  padding: 10px;
+}
+.wf-login-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wf-branding-container {
+  background-color: #b7152e;
+  height: 100vh;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.wf-branding-container h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+  text-transform: uppercase;
+}
+
+.wf-svg-container {
+  border-right: 5px solid #fdcd43;
+  margin-left: 20px;
+  height: 120px;
+  width: 120px;
+  padding-right: 20px;
+}
+
+.wf-branding-container svg {
+  /* padding-left: 20px; */
+  padding-right: 20px;
+}
+
+footer{
+  height: 20vh;
+  width: 100%;
+}
+footer img {
+  display: absolute;
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 200px;
+}
+
+.wf-form-container {
+  margin: 60px 40px 0px 60px;
+  width: 50%;
+  height: 100vh;
+}
+
+.wf-form-container h1 {
+  color: #cb1832;
+  font-size: 35px;
+  width: 380px;
+}
+.wf-form-container p {
+  width: 380px;
+  margin-bottom: 20px;
+}
+
+/* .wf-form-container form{
+display:flex;
+flex-direction: column;
+align-content: space-around;
+} */
+
+.wf-login-cta {
+  display: flex;
+  margin-top: 40px;
+}
+
+.wf-main-button {
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #cb1832;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 130px;
+  margin-right: 45px;
+}
+
+.wf-secondary-button {
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #fdcd43;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 130px;
+}
