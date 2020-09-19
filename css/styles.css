@@ -1,3 +1,12 @@
+/* Colors:
+#FBDD86 Yellow
+#35A673 Green Light
+#308D63 Green Dark
+#205F43 Green Darker
+#05386B Deep blue
+*/
+
+
 body {
   font-family: "Asap", sans-serif;
 }
@@ -35,27 +44,27 @@ input::placeholder {
 }
 
 .wf-branding-container {
-  background-color: #b7152e;
+  background-color: #35A673;
   height: 100vh;
   display: flex;
   width: 40%;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-right: 40px;
 }
 
 .wf-branding-container h1 {
   font-size: 20px;
-  color: white;
+  color: #205F43;
   font-weight: 400;
   padding-left: 20px;
-  /* padding-right: 20px; */
+  padding-right: 20px;
   text-transform: uppercase;
 }
 
 .wf-svg-container {
-  border-right: 5px solid #fdcd43;
+  border-right: 2px solid white;
   margin-left: 20px;
   height: 120px;
   width: 120px;
@@ -88,7 +97,7 @@ footer img {
 }
 
 .wf-form-container h1 {
-  color: #cb1832;
+  color: #35A673;
   font-size: 35px;
   width: 380px;
 }
@@ -112,7 +121,7 @@ align-content: space-around;
   height: 40px;
   border: none;
   border-radius: 2px;
-  background-color: #cb1832;
+  background-color: #05386B;
   color: white;
   text-transform: uppercase;
   font-size: 14px;
@@ -122,10 +131,10 @@ align-content: space-around;
 
 .wf-secondary-button {
   height: 40px;
-  border: none;
+  border: 1px solid #105FB2;
   border-radius: 2px;
-  background-color: #fdcd43;
-  color: black;
+  background-color:white;
+  color: #105FB2;
   text-transform: uppercase;
   font-size: 14px;
   width: 130px;
