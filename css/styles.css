@@ -18,19 +18,20 @@ p {
 }
 
 label {
-  display: block;
-  font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
-  padding-bottom: 0.75rem;
-  padding-top: 1.25rem;
+	display: block;
+	font-family: "Inter", sans-serif;
+	font-size: 0.875rem;
+	padding-bottom: 0.75rem;
+	padding-top: 1.25rem;
 }
 
 input {
-  height: 2.5rem;
-  border: 0.0625rem solid #d6d6d6;
-  border-radius: 0.25rem;
-  margin-bottom: 1.25rem;
-  width: 18.75rem;
+	display: block;
+	height: 2.5rem;
+	border: 0.0625rem solid #d6d6d6;
+	border-radius: 0.25rem;
+	margin-bottom: 1.25rem;
+	width: 18.75rem;
 }
 
 input::placeholder {
@@ -38,6 +39,16 @@ input::placeholder {
   color: #c9c9c9;
   padding: 0.625rem;
 }
+
+select {
+	display: block;
+	height: 2.5rem;
+	border: 0.0625rem solid #d6d6d6;
+	border-radius: 0.25rem;
+	margin-bottom: 1.25rem;
+	width: 9.125rem;
+}
+
 .gb-login-container {
   display: flex;
   flex-direction: row;
@@ -139,3 +150,111 @@ align-content: space-around;
   font-size: 0.875rem;
   width: 8.125rem;
 }
+
+/* Personal info page styles */
+
+.gb-formpage-container{
+display: flex;
+}
+
+.gb-formpage-aside{
+  display: flex;
+  flex-direction: column;
+
+  width: 20%;
+  background-color: #308D63;
+  padding: 1.25rem;
+  margin: 0rem;
+}
+.gb-formpage-logo-header h1{
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  padding-left: 0.313rem;
+}
+.gb-formpage-logo{
+height: 4.688rem;
+width: 4.688rem;
+border-right: 0.063rem solid white;
+padding-right: 0.313rem;
+}
+
+.gb-formpage-mast{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.gb-formpage-left{
+  display: grid;
+  grid-template-columns: 1fr 
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-left: 1.875rem;
+  }
+
+.gb-formpage-left-wrapper{
+  display: grid;
+  width: 31.35rem;
+  height: 80vh;
+	margin: 0rem;
+  padding: 0rem;
+  padding-top: 3.75rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4,5rem);
+	grid-gap: 1.875rem;
+}
+
+.gb-form-row1 {
+	display: grid;
+	margin: 0rem;
+	padding: 0rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(2,2.375rem);
+	grid-column-gap: 0.625rem;
+}
+
+
+.gb-form-row3 {
+	display: grid;
+	align-items: strecth;
+	margin: 0rem;
+	padding: 0rem;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+
+
+.city-field {
+	width: 9.125rem;
+	margin: 0rem;
+	padding: 0rem;
+}
+
+.city-state-group {
+	display: grid;
+	margin: 0rem;
+	padding: 0rem;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+}
+
+.gb-form-row2 {
+	display: grid;
+	margin: 0rem;
+	padding: 0rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2.375rem 2.375rem;
+	grid-column-gap: 0.625rem;
+}
+
+.gb-form-row4 {
+	display: grid;
+	margin: 0rem;
+	padding: 0rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2.375rem 2.375rem;
+	grid-column-gap: 0.625rem;
+}
+
