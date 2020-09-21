@@ -9,6 +9,7 @@
 body {
   font-family: "Asap", sans-serif;
   height: 100vh;
+  width: 100%;
 }
 
 p {
@@ -25,29 +26,48 @@ label {
 	padding-top: 1.25rem;
 }
 
+li {
+list-style-type: none;
+margin:0rem;
+}
+
+.nav-link{
+padding-left: 0.938rem;
+padding-bottom: 1.563rem;
+padding-top:1.563rem;
+margin: 0rem;
+}
+
 input {
 	display: block;
 	height: 2.5rem;
 	border: 0.0625rem solid #d6d6d6;
 	border-radius: 0.25rem;
 	margin-bottom: 1.25rem;
-	width: 18.75rem;
+  width: 18.75rem;
+  padding-left: 0.625rem;
 }
 
 input::placeholder {
   font-size: 0.875rem;
   color: #c9c9c9;
-  padding: 0.625rem;
+  
 }
 
 select {
-	display: block;
-	height: 2.5rem;
+	/* display: block; */
+	height: 2.75rem;
 	border: 0.0625rem solid #d6d6d6;
 	border-radius: 0.25rem;
-	margin-bottom: 1.25rem;
-	width: 9.125rem;
+	/* margin-bottom: 1.25rem; */
+  width: 8rem;
+  padding-left: 0.625rem;
+  
 }
+
+
+
+/* Main Page Styles */
 
 .gb-login-container {
   display: flex;
@@ -87,20 +107,6 @@ select {
   padding-right: 1.25rem;
 }
 
-footer {
-  height: 20vh;
-  width: 100%;
-}
-footer img {
-  display: absolute;
-  height: 9.375rem;
-  position: absolute;
-  bottom: 0rem;
-  left: 0rem;
-  right: 0rem;
-  padding-top: 12.5rem;
-}
-
 .gb-form-container {
   margin: 7.5rem 2.5rem 0rem 3.75rem;
   width: 50%;
@@ -116,12 +122,6 @@ footer img {
   width: 23.75rem;
   margin-bottom: 1.25rem;
 }
-
-/* .wf-form-container form{
-display:flex;
-flex-direction: column;
-align-content: space-around;
-} */
 
 .gb-login-cta {
   display: flex;
@@ -151,7 +151,7 @@ align-content: space-around;
   width: 8.125rem;
 }
 
-/* Personal info page styles */
+/* Left Side */
 
 .gb-formpage-container{
 display: flex;
@@ -160,10 +160,9 @@ display: flex;
 .gb-formpage-aside{
   display: flex;
   flex-direction: column;
-
-  width: 20%;
+  justify-content: flex-start;
+  width: 22%;
   background-color: #308D63;
-  padding: 1.25rem;
   margin: 0rem;
 }
 .gb-formpage-logo-header h1{
@@ -171,7 +170,8 @@ display: flex;
   text-transform: uppercase;
   font-weight: 400;
   color: white;
-  padding-left: 0.313rem;
+  padding-left: 0.938rem;
+  padding-right: 0.938rem;
 }
 .gb-formpage-logo{
 height: 4.688rem;
@@ -184,28 +184,54 @@ padding-right: 0.313rem;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  padding-left:0.469rem;
+  padding-right: 1.563rem;
+  padding-top: 1.563rem;
+} 
+
+.gb-formpage-nav{
+ text-transform: uppercase;
+ padding-top: 3.75rem;
+ color: white;
+ font-family: 'Asap', sans-serif;
+ font-size: 0.938rem;
 }
 
-.gb-formpage-left{
+
+/* Right Side */
+
+.gb-formpage-right{
   display: grid;
   grid-template-columns: 1fr 
   grid-template-rows: 1fr 1fr 1fr;
-  padding-left: 1.875rem;
-  }
+  width: 78%;
+    }
 
-.gb-formpage-left-wrapper{
+
+.gb-formpage-right-wrapper{
   display: grid;
-  width: 31.35rem;
-  height: 80vh;
+  width: 43.75rem;
+  height: 70vh;
 	margin: 0rem;
   padding: 0rem;
   padding-top: 3.75rem;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4,5rem);
-	grid-gap: 1.875rem;
+	grid-template-rows: repeat(4,7rem);
+  grid-gap: 1.875rem;
+  padding-left: 3.75rem;
 }
 
+.gb-formpage-right-header{
+  padding-top: 0.875rem;
+  border-bottom: 2px solid green;
+}
+
+.gb-formpage-right-header h1{
+  padding-left: 3.75rem;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 2.938rem;
+}
 .gb-form-row1 {
 	display: grid;
 	margin: 0rem;
@@ -215,21 +241,19 @@ padding-right: 0.313rem;
 	grid-column-gap: 0.625rem;
 }
 
-
 .gb-form-row3 {
 	display: grid;
-	align-items: strecth;
 	margin: 0rem;
 	padding: 0rem;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 10px;
+
 }
 
 
 .city-field {
 	width: 9.125rem;
 	margin: 0rem;
-	padding: 0rem;
+	
 }
 
 .city-state-group {
@@ -237,7 +261,7 @@ padding-right: 0.313rem;
 	margin: 0rem;
 	padding: 0rem;
 	grid-template-columns: 1fr 1fr;
-	justify-items: center;
+	/* justify-items: center; */
 }
 
 .gb-form-row2 {
@@ -258,3 +282,32 @@ padding-right: 0.313rem;
 	grid-column-gap: 0.625rem;
 }
 
+.gb-formpage-navbuttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: space-between; */
+  padding-left: 3.75rem;
+  padding-right:6.5rem;
+  height: 30vh;
+}
+
+.gb-formpage-navbuttons-back {
+width:7.313rem;
+height: 2.25rem;
+text-transform: uppercase;
+color:white;
+background-color: #0456B4;
+border-radius: 0.25rem;
+border: none;
+}
+
+.gb-formpage-navbuttons-next {
+justify-self: end;
+width:7.313rem;
+height: 2.25rem;
+text-transform: uppercase;
+color:#0456B4;
+background-color: white;;
+border-radius: 0.25rem;
+border: 0.063rem solid #0456B4;
+}
