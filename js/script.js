@@ -1,5 +1,7 @@
-console.log("JS Loaded!");
+let loginForm = document.getElementById('login-form')
 
-const name = "Marc";
-
-console.log(name);
+loginForm.addEventListener('submit', function(event){
+event.preventDefault()
+let userName = document.getElementById('user-email').value
+console.log(userName)
+})
