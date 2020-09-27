@@ -1,155 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>GB - Invoice Manager - Dashboard</title>
-  </head>
 
-  <body>
-    <main>
-      <nav class="bg-dashboard-nav">
-        <div class="dashboard-branding-container">
-          <img src="img/greenBank-logo.svg" alt="Green Bank Logo" />
-          <h1>Invoice Manager</h1>
-        </div>
-        <div class="gb-dashboard-topnav">
-          <img
-            src="img/hamburger-white.svg"
-            alt="Hamburger Menu"
-            style="width:3.813rem height:3.813rem"
-          />
-        </div>
-      </nav>
-      <section class="gb-dashboard-main-container">
-        <aside class="gb-dashboard-nav">
-          <div class="dashboard-nav-level1 dashboard-header">
-            <img src="img/folder-icon.svg" alt="Overview Icon" />
-            <h2>Overview</h2>
-          </div>
-          <div class="dashboard-nav-level1">
-            <div class="dashboard-header">
-              <img src="img/payment-icon.svg" alt="Payment Icon" />
-              <h2>Payments</h2>
-            </div>
-            <li class="dashboard-nav-level2">Manage Account</li>
-            <li class="dashboard-nav-level2">Add Account</li>
-          </div>
-          <div class="dashboard-nav-level1">
-            <div class="dashboard-header">
-              <img src="img/invoices-icon.svg" alt="Invoices Icon" />
-              <h2>Invoices</h2>
-            </div>
-            <li class="dashboard-nav-level2">Manage Systems</li>
-            <li class="dashboard-nav-level2">Add New System</li>
-            <li class="dashboard-nav-level2">Add Manual Invoice</li>
-          </div>
-          <div class="dashboard-nav-level1 dashboard-header">
-            <img src="img/po-icon.svg" alt="Purchase Order Icon" />
-            <h2>Purchase Order</h2>
-          </div>
-        </aside>
-        <div class="dashboard-right-container">
-          <div class="gb-card-container pending">
-            <div class="gb-card-header">
-              <h2>Pending</h2>
-              <img src="img/ellipsis-icon.svg" alt="More Icon" />
-            </div>
-            <div class="card-pending">
-              <p>ID 14387</p>
-              <h3>Invoice PERF - 2357</h3>
-              <h5>Contact</h5>
-              <h4>Sherry Riley</h4>
-              <h5>Amount</h5>
-              <h4>US$ 14,000.00</h4>
-            </div>
-            <div class="card-pending">
-              <p>ID 51367</p>
-              <h3>Invoice RTSD - 5546</h3>
-              <h5>Contact</h5>
-              <h4>Brad Manning</h4>
-              <h5>Amount</h5>
-              <h4>US$3,450.00</h4>
-            </div>
-            <div class="card-pending">
-              <p>ID 33209</p>
-              <h3>Invoice BMGL - 3807</h3>
-              <h5>Contact</h5>
-              <h4>Delores Morgan</h4>
-              <h5>Amount</h5>
-              <h4>US$7,360.00</h4>
-            </div>
-          </div>
-          <div class="gb-card-container submitted">
-            <div class="gb-card-header">
-              <h2>Submitted</h2>
-              <img src="img/ellipsis-icon.svg" alt="More Icon" />
-            </div>
-            <div class="card-submitted">
-              <p>ID 14387</p>
-              <h3>Invoice PERF - 2357</h3>
-              <h5>Contact</h5>
-              <h4>Sherry Riley</h4>
-              <h5>Amount</h5>
-              <h4>US$ 14,000.00</h4>
-            </div>
-            <div class="card-submitted">
-              <p>ID 51367</p>
-              <h3>Invoice RTSD - 5546</h3>
-              <h5>Contact</h5>
-              <h4>Brad Manning</h4>
-              <h5>Amount</h5>
-              <h4>US$3,450.00</h4>
-            </div>
-            <div class="card-submitted">
-              <p>ID 33209</p>
-              <h3>Invoice BMGL - 3807</h3>
-              <h5>Contact</h5>
-              <h4>Delores Morgan</h4>
-              <h5>Amount</h5>
-              <h4>US$7,360.00</h4>
-            </div>
-          </div>
-          <div class="gb-card-container processed">
-            <div class="gb-card-header">
-              <h2>Processed</h2>
-              <img src="img/ellipsis-icon.svg" alt="More Icon" />
-            </div>
-            <div class="card-processed">
-              <p>ID 14387</p>
-              <h3>Invoice PERF - 2357</h3>
-              <h5>Contact</h5>
-              <h4>Sherry Riley</h4>
-              <h5>Amount</h5>
-              <h4>US$ 14,000.00</h4>
-            </div>
-            <div class="card-processed">
-              <p>ID 51367</p>
-              <h3>Invoice RTSD - 5546</h3>
-              <h5>Contact</h5>
-              <h4>Brad Manning</h4>
-              <h5>Amount</h5>
-              <h4>US$3,450.00</h4>
-            </div>
-            <div class="card-processed">
-              <p>ID 33209</p>
-              <h3>Invoice BMGL - 3807</h3>
-              <h5>Contact</h5>
-              <h4>Delores Morgan</h4>
-              <h5>Amount</h5>
-              <h4>US$7,360.00</h4>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="js/script.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+	<title>GB - Invoice Manager - Dashboard</title>
+</head>
+
+<body>
+	<main class="dashboard-main">
+		<nav class="bg-dashboard-nav">
+			<div class="dashboard-branding-container">
+				<img src="img/greenBank-logo.svg" alt="Green Bank Logo" />
+				<h1>Invoice Manager</h1>
+			</div>
+			<div class="hamburger-menu">
+				<img src="img/hamburger-white.svg" alt="Hamburger Menu"/>
+			</div>
+		</nav>
+		<section class="gb-dashboard-main-container">
+			<aside class="gb-dashboard-nav">
+				<div class="dashboard-nav-level1 dashboard-header">
+					<img src="img/folder-icon.svg" alt="Overview Icon" />
+					<h2>Overview</h2>
+				</div>
+				<div class="dashboard-nav-level1">
+					<div class="dashboard-header">
+						<img src="img/payment-icon.svg" alt="Payment Icon" />
+						<h2>Payments</h2>
+					</div>
+					<li class="dashboard-nav-level2">Manage Account</li>
+					<li class="dashboard-nav-level2">Add Account</li>
+				</div>
+				<div class="dashboard-nav-level1">
+					<div class="dashboard-header">
+						<img src="img/invoices-icon.svg" alt="Invoices Icon" />
+						<h2>Invoices</h2>
+					</div>
+					<li class="dashboard-nav-level2">Manage Systems</li>
+					<li class="dashboard-nav-level2">Add New System</li>
+					<li class="dashboard-nav-level2">Add Manual Invoice</li>
+				</div>
+				<div class="dashboard-nav-level1 dashboard-header">
+					<img src="img/po-icon.svg" alt="Purchase Order Icon" />
+					<h2>Purchase Order</h2>
+				</div>
+			</aside>
+			<div class="dashboard-right-container">
+				<div class="gb-card-container">
+					<div class="gb-card-header gb-card-header-pending">
+						<h2>Pending</h2>
+						<img src="img/ellipsis-icon.svg" alt="More Icon" />
+					</div>
+					<div class="card-pending">
+						<p>ID 14387</p>
+						<div class="content-card">
+						<h3>Invoice PERF - 2357</h3>
+						<h5>Contact</h5>
+						<h4>Sherry Riley</h4>
+						<h5>Amount</h5>
+						<h4>US$ 14,000.00</h4>
+					</div>
+					</div>
+					<div class="card-pending">
+						<p>ID 51367</p>
+						<div class="content-card">
+						<h3>Invoice RTSD - 5546</h3>
+						<h5>Contact</h5>
+						<h4>Brad Manning</h4>
+						<h5>Amount</h5>
+						<h4>US$3,450.00</h4>
+						</div>
+					</div>
+					<div class="card-pending">
+						<p>ID 33209</p>
+						<div class="content-card">
+						<h3>Invoice BMGL - 3807</h3>
+						<h5>Contact</h5>
+						<h4>Delores Morgan</h4>
+						<h5>Amount</h5>
+						<h4>US$7,360.00</h4>
+						</div>
+					</div>
+				</div>
+				<div class="gb-card-container submitted">
+					<div class= "gb-card-header gb-card-header-submitted">
+						<h2>Submitted</h2>
+						<img src="img/ellipsis-icon.svg" alt="More Icon" />
+					</div>
+					<div class="card-submitted">
+						<p>ID 14387</p>
+						<div class="content-card">
+						<h3>Invoice PERF - 2357</h3>
+						<h5>Contact</h5>
+						<h4>Sherry Riley</h4>
+						<h5>Amount</h5>
+						<h4>US$ 14,000.00</h4>
+						</div>
+					</div>
+					<div class="card-submitted">
+						<p>ID 51367</p>
+						<div class="content-card">
+						<h3>Invoice RTSD - 5546</h3>
+						<h5>Contact</h5>
+						<h4>Brad Manning</h4>
+						<h5>Amount</h5>
+						<h4>US$3,450.00</h4>
+						</div>
+					</div>
+					<div class="card-submitted">
+						<p>ID 33209</p>
+						<div class="content-card">
+						<h3>Invoice BMGL - 3807</h3>
+						<h5>Contact</h5>
+						<h4>Delores Morgan</h4>
+						<h5>Amount</h5>
+						<h4>US$7,360.00</h4>
+						</div>
+					</div>
+				</div>
+				<div class="gb-card-container processed">
+					<div class="gb-card-header  gb-card-header-processed">
+						<h2>Processed</h2>
+						<img src="img/ellipsis-icon.svg" alt="More Icon" />
+					</div>
+					<div class="card-processed">
+						<p>ID 14387</p>
+						<div class="content-card">
+						<h3>Invoice PERF - 2357</h3>
+						<h5>Contact</h5>
+						<h4>Sherry Riley</h4>
+						<h5>Amount</h5>
+						<h4>US$ 14,000.00</h4>
+						</div>
+					</div>
+					<div class="card-processed">
+						<p>ID 51367</p>
+						<div class="content-card">
+						<h3>Invoice RTSD - 5546</h3>
+						<h5>Contact</h5>
+						<h4>Brad Manning</h4>
+						<h5>Amount</h5>
+						<h4>US$3,450.00</h4>
+						</div>
+					</div>
+					<div class="card-processed">
+						<p>ID 33209</p>
+						<div class="content-card">
+						<h3>Invoice BMGL - 3807</h3>
+						<h5>Contact</h5>
+						<h4>Delores Morgan</h4>
+						<h5>Amount</h5>
+						<h4>US$7,360.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+
 </html>
