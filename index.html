@@ -34,19 +34,19 @@
         </p>
         <form id="login-form">
           <label for="username">Username</label>
-          <input type="email" name="Username" id="user-email" placeholder="Enter username"/>
-
+          <input type="text" name="username" id="user-email" placeholder="Enter username"/>
+          <div class="error-text" id="error"></div>
           <label for="password">Password</label>
           <input
             type="password"
             name="Password"
             id="user-password"
             placeholder="Enter password"
-          />
+         /> 
 
           <div class="gb-login-cta">
             <input type="submit" value="Login" class="gb-main-button">  
-            <input type="submit" value="Register"  class="gb-secondary-button">
+            <a href= personalProfile.html class="gb-secondary-button">Register</a>  
           </div>
         </form> 
        </section>
