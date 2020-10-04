@@ -50,8 +50,10 @@ emailField.addEventListener('keyup', function(event){
     emailInput.classList.add('field-pass');
     emailError.textContent = "";
  } else{
-  emailError.textContent = "Please enter a valid email address.";
+  emailInput.classList.remove('field-pass');
+  emailError.textContent = "Please enter a valid email";
   emailInput.classList.add('field-error');
+  
  }
 });
 
@@ -62,7 +64,7 @@ let phoneInput = document.getElementById("contactnumber");
 let phoneError = document.getElementById("error-phone");
 let phoneFormat = /^\d{3}-\d{3}-\d{4}$/;
 
-phoneField.addEventListener('keyup', (event) => {
+phoneField.addEventListener('keyup', function(event){
     event.preventDefault()
     if (phoneInput.value.match(phoneFormat)) {
          phoneInput.classList.add('field-pass')
@@ -73,3 +75,47 @@ phoneField.addEventListener('keyup', (event) => {
   });
 
 // Password
+
+let userPassInput = document.getElementById('password');
+// let userError = document.getElementById('error-password');
+let passField = document.getElementById('password-field')
+let letter = document.getElementById('letter');
+let capital = document.getElementById('capital');
+let number = document.getElementById('number');
+
+passField.addEventListener('keyup', function(event){
+  var lowerCaseLetters = /[a-z]/g;
+  if (userPassInput.value.match(lowerCaseLetters)) {
+      userPassInput.classList.add('field-pass');
+      letter.classList.remove("wrong");
+      letter.classList.add("correct");
+  } else {
+      userPassInput.classList.remove('field-pass');
+      userPassInput.classList.add('field-error');
+      letter.classList.add("wrong");
+      letter.classList.remove("correct");
+  }  
+  var upperCaseLetters = /[A-Z]/g;
+  if (userPassInput.value.match(upperCaseLetters)) {
+     userPassInput.classList.add('field-pass');
+     capital.classList.remove("wrong");
+     capital.classList.add("correct");
+  } else {
+    userPassInput.classList.remove('field-pass')
+    userPassInput.classList.add('field-error')
+    capital.classList.remove("correct")
+    capital.classList.add("wrong")
+  }
+  var numbers = /[0-9]/g;;
+  if (userPassInput.value.match(numbers)) {
+     userPassInput.classList.add('field-pass');
+     number.classList.remove("wrong");
+     number.classList.add("correct");
+  } else {
+    userPassInput.classList.remove('field-pass')
+    userPassInput.classList.add('field-error')
+    number.classList.remove("correct")
+    number.classList.add("wrong")
+  }
+})
+

@@ -33,16 +33,18 @@
           strategic activities.
         </p>
         <form id="login-form">
-          <label for="username">Username</label>
-          <input type="text" name="username" id="user-email" placeholder="Enter username"/>
-          <div class="error-text" id="error"></div>
+          <label for="username">Email</label>
+          <input type="email" name="username" id="user-email" placeholder="Enter email" required/>
+          <div class="error-text" id="error-username"></div>
           <label for="password">Password</label>
           <input
             type="password"
             name="Password"
             id="user-password"
             placeholder="Enter password"
+           
          /> 
+         <div class="error-text" id="error-pass"></div>
 
           <div class="gb-login-cta">
             <input type="submit" value="Login" class="gb-main-button">  
@@ -51,6 +53,6 @@
         </form> 
        </section>
     </main>
-    <script src="js/script.js"></script>
-  </body>
+     <script src="/java-js/script.js"></script>
+    </body>
 </html>

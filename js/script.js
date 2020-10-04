@@ -1,17 +1,19 @@
 let loginForm = document.getElementById("login-form");
-let errorMessageDiv = document.getElementById("error");
 let userName = document.getElementById("user-email");
-// let emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+let userPass = document.getElementById("user-password");
+let errorPassMessageDiv = document.getElementById('error-pass');
+let userEmail = 'mt.ramos@gmail.com'
+let password = 'this.is.mypassword'
 
-loginForm.addEventListener('keyup', function(event){
-  event.preventDefault()
-   
-  if (userName.value.length < 3) {
-    userName.classList.add('field-error')
-    errorMessageDiv.textContent = "Enter a valid email address";    
-  } else {
-    errorMessageDiv.textContent = "";
-    userName.classList.remove('field-error')
+loginForm.addEventListener( 'submit', (e) =>{
+  e.preventDefault()
+if (userName.value !== userEmail && userPass !== password){
+  userName.classList.add('field-error')
+  userPass.classList.add('field-error')
+  errorPassMessageDiv.textContent = "Password and Email do not match our records. Please try again.";
+} else {
+  errorPassMessageDiv.textContent = '';
+  userName.classList.remove('field-error')
+  userPass.classList.remove('field-error')
   }
-  
-  })
+})

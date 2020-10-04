@@ -84,7 +84,7 @@
               <div id="state-field">
                 <label for="State">State</label>
                 <select name="state" id="state" placeholder="Select">
-                  <option value="default"></option>
+                  <option selected="" value="default"></option>
                   <option value="AL">AL</option>
                   <option value="AK">AK</option>
                   <option value="AZ">AZ</option>
@@ -144,32 +144,36 @@
           <div class="gb-form-row4">
             <div id="password-field">
               <label for="password">Password</label>
-              <input type="password" id="password" placeholder="Enter password"/>
-              <div class="error-text" id="error"></div>
+              <input type="password" id="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at
+              least 8 or more characters"
+              required/>
+              <div class="error-text" id="error-password"></div>
+              <div id="checksField" class="password-verify">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="wrong">A <b>lowercase</b> letter</p>
+                <p id="capital" class="wrong">A <b>capital (uppercase)</b>letter</p>
+                <p id="number" class="wrong">A <b>number</b></p>
+                </div>
             </div>
             <div id="confirm-password-field">
               <label for="confpassword">Confirm Password</label>
               <input type="password" id="confpassword" placeholder="Confirm password"/>
-              <div class="error-text" id="error"></div>
+              <div class="error-text" id="error-confirm-password"></div>
+              
             </div>
           </div>
-        </form>  
-        </div>
-        <div class="gb-formpage-navbuttons">
-          <input
-            class="gb-formpage-navbuttons-back"
-            type="submit"
-            value="Back"
-          />
-          <input
-            class="gb-formpage-navbuttons-next"
-            type="submit"
-            value="next"
-          />
-        </div>
+             <div class="gb-formpage-navbuttons">
+              <div class="gb-alt-primary-button"><a href="index.html"> back</a></div>
+              <div class="gb-secondary-button"><a href="companyProfile.html">Next</a></div>
+              
+              </div>
+        </form> 
+       
+        
       </section>
 
     </main>
-    <script src="js/personalProfile.js"></script>
+    <script src="/java-js/personalProfile.js"></script>
   </body>
 </html>

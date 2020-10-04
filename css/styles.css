@@ -9,16 +9,33 @@
 
 body {
   font-family: "Asap", sans-serif;
-  height: 100vh;
-  width: 100%;
-}
+  height: 100%;
+  width: 64rem;
+  }
 
+  h5{
+  font-size: 3.938rem;
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  color: white;
+  }
 input:focus, textarea:focus, select:focus{
 	outline: none;
 }
 a {
   text-decoration: none;
 }
+
+a:link, a:visited { 
+  color:white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:link:active, a:visited:active { 
+  color: white;
+}
+
 p {
   font-size: 0.875rem;
   line-height: 1.9;
@@ -66,19 +83,26 @@ select {
   border: 0.0625rem solid #d6d6d6;
   border-radius: 0.25rem;
   /* margin-bottom: 1.25rem; */
-  width: 8rem;
+  width: 8.125rem;
   padding-left: 0.625rem;
 }
 
-select option:first-child {
-  font-size: 0.875rem;
-  color: #c9c9c9;
-}
+
 /* Main Page Styles */
 
 .gb-login-container {
   display: flex;
   flex-direction: row;
+}
+
+.gb-success-main-container{
+display:flex;
+flex-direction: column;
+height: 100vh;
+width: 100%;
+background-color: #35a673;
+justify-content: center;
+align-items: center;
 }
 
 .gb-branding-container {
@@ -92,6 +116,31 @@ select option:first-child {
   padding-right: 2.5rem;
 }
 
+.gb-sucess-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+
+.gb-sucess-branding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+.gb-sucess-branding-container h1 {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 400;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-transform: uppercase;
+}
 .gb-branding-container h1 {
   font-size: 1.25rem;
   color: white;
@@ -150,13 +199,13 @@ select option:first-child {
 
 .gb-secondary-button {
   height: 1rem;
-  border: 0.0625rem solid #105fb2;
+  border: none;
   border-radius: 0.125rem;
   text-align: center;
   margin: 2px;
   padding: 10px 3px;
-  background-color: white;
-  color: #105fb2;
+  background-color: #35a673;
+  color: white;
   text-transform: uppercase;
   font-size: 0.875rem;
   width: 8.125rem;
@@ -173,6 +222,7 @@ select option:first-child {
   flex-direction: column;
   justify-content: flex-start;
   width: 22%;
+  height: 100vh;
   background-color: #308d63;
   margin: 0rem;
 }
@@ -237,7 +287,7 @@ select option:first-child {
 .gb-formpage-right {
   display: grid;
   grid-template-columns: 1fr;
-  width: 78%;
+  width: 80%;
 }
 
 .gb-formpage-right-wrapper {
@@ -263,20 +313,21 @@ select option:first-child {
   font-family: "Asap", sans-serif;
   font-weight: 400;
   font-size: 2.938rem;
+  width: 98%;
 }
 .gb-form-row1 {
   display: grid;
   margin: 0rem;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 2.375rem);
+  /* grid-template-rows: repeat(2, 2.375rem); */
   grid-column-gap: 0.625rem;
 }
 
 .gb-form-row3 {
   display: grid;
   margin: 0rem;
-  padding-bottom: 2rem;
+  grid-column-gap: 0.625rem;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -289,15 +340,16 @@ select option:first-child {
   display: grid;
   margin: 0rem;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  justify-items: start;
+  grid-column-gap: 1rem;
 }
 
 .gb-form-row2 {
   display: grid;
   margin: 0rem;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2.375rem 2.375rem;
+  /* grid-template-rows: 2.375rem 2.375rem; */
   grid-column-gap: 0.625rem;
 }
 
@@ -306,17 +358,20 @@ select option:first-child {
   margin: 0rem;
   padding: 0rem;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2.375rem 2.375rem;
+  /* grid-template-rows: 2.375rem 2.375rem; */
   grid-column-gap: 0.625rem;
 }
 
 .gb-formpage-navbuttons {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr;
-  /* justify-content: space-between; */
-  padding-left: 3.75rem;
-  padding-right: 6.5rem;
-  height: 30vh;
+  grid-column-gap: 22rem;
+  padding-top: 6rem;
+  /* padding-left: 3.75rem; */
+  /* padding-right: 6.5rem; */
+  
+  
 }
 
 .gb-formpage-navbuttons-back {
@@ -330,7 +385,7 @@ select option:first-child {
 }
 
 .gb-formpage-navbuttons-next {
-  justify-self: end;
+  /* justify-self: end; */
   width: 7.313rem;
   height: 2.25rem;
   text-transform: uppercase;
@@ -338,6 +393,7 @@ select option:first-child {
   background-color: white;
   border-radius: 0.25rem;
   border: 0.063rem solid #0456b4;
+  
 }
 
 /* Dashboard Styles */
@@ -572,10 +628,69 @@ select option:first-child {
 	border: 0.0625rem solid red;
 }
 
+.field-pass{
+	border: 0.0625rem solid green;
+}
 .empty-error-text {
 	margin-top: 10px;
   margin-left: 5px;
   font-size: 10px;
 	color: #808080;
 	font-family: "Inter", sans-serif;
+}
+
+.gb-alt-primary-button {
+  height: 1rem;
+  border: 0.0625rem solid #105fb2;
+  border-radius: 0.125rem;
+  text-align: center;
+  margin: 2px;
+  padding: 10px 3px;
+  background-color: #05386b;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  width: 8.125rem;
+}
+
+.gb-sucess-button {
+  height: 1rem;
+  border: 0.0625rem solid #105fb2;
+  border-radius: 0.125rem;
+  text-align: center;
+  margin: 2px;
+  padding: 10px 20px;
+  background-color: #05386b;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  width: 10rem;
+}
+
+.password-verify{
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  
+}
+
+.password-verify h3{
+font-weight: 300;
+font-size: 0.75rem;
+}
+
+.password-verify p{
+font-size: .0625rem;
+font-weight: 200;
+}
+
+#checksField{
+display: block;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
 }
